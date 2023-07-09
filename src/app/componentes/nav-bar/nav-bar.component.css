@@ -1,0 +1,84 @@
+i {
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid #abacb0;
+  text-shadow: none;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 700;
+  width: 220px;
+  transition: 0.5s ease;
+}
+
+a:hover {
+  border-radius: 15px;
+  color: #fff;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}
+
+.navBar {
+  width: 300px;
+  height: 100vh;
+  border: 1px solid #000;
+  background-color: #e1e1e1;
+}
+
+.container__navBar {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.logo i {
+  font-size: 20px;
+  rotate: 25deg;
+  text-shadow: none;
+  border: none;
+  background: none;
+
+}
+
+.logo h1 {
+  font-family: 'Delius', cursive;
+  font-size: 25px;
+}
+
+.logo img {
+  position: relative;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.container__navBar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 150px;
+  margin-top: 40px;
+}
+
+.ativa {
+  width: 220px;
+  padding: 8px 0;
+  padding-inline-start: 10px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  background-color: #000;
+}
+
+.ativa a {
+  font-size: 17px;
+  color: #fff;
+}
