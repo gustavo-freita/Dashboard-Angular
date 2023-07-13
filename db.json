@@ -1,0 +1,37 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "influencers": [
+    {
+      "nome": "gustavo",
+      "quantidadeDeInscritos": "2555",
+      "nomeDoCanal": "ajksks",
+      "plataforma": "askdç",
+      "tipoDoConteudo": "vlog",
+      "id": 4
+    },
+    {
+      "nome": "teste ",
+      "quantidadeDeInscritos": "teste ",
+      "nomeDoCanal": "tetsgasdg",
+      "plataforma": "lçaksdlçaksçl",
+      "tipoDoConteudo": "lkaslçdkaslçd",
+      "id": 5
+    }
+  ]
+}

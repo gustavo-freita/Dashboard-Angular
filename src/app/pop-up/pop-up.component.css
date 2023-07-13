@@ -1,0 +1,17 @@
+.informacoes__popUp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.conteudo__popUp {
+  display: flex;
+  gap: 12px;
+}
+
+.botao__popUp {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

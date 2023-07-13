@@ -1,0 +1,14 @@
+.informcao__influencer {
+  max-width: 1248px;
+  padding-top: 20px;
+}
+
+.barraDePesquisa {
+  width: 50%;
+}
+
+table {
+  border: 2px solid #000;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+}

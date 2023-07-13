@@ -1,0 +1,82 @@
+<div class="container__influenciadores">
+  <div class="adicionar__influencer4">
+    <button mat-raised-button (click)="openPopUp()">Adicionar Influencer</button>
+  </div>
+  <div class="informcao__influencer">
+    <mat-form-field class="barraDePesquisa">
+      <mat-label>Buscar</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ex: Edu" #input>
+    </mat-form-field>
+
+    <div class="container__tabela">
+      <table mat-table [dataSource]="dataSource" matSort>
+
+        <!-- ID Coluna -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+          <td mat-cell *matCellDef="let row"> {{row.id}} </td>
+        </ng-container>
+        <!-- ID Coluna -->
+
+        <!-- Nome Coluna -->
+        <ng-container matColumnDef="nome">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Nome </th>
+          <td mat-cell *matCellDef="let row"> {{row.nome}} </td>
+        </ng-container>
+        <!-- Nome Coluna -->
+
+        <!-- Quantidade de inscritos Coluna -->
+        <ng-container matColumnDef="quantidadeDeInscritos">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Quantidade de Inscritos </th>
+          <td mat-cell *matCellDef="let row"> {{row.quantidadeDeInscritos}} </td>
+        </ng-container>
+        <!-- Quantidade de inscritos Coluna -->
+
+        <!-- Nome do canal Coluna -->
+        <ng-container matColumnDef="nomeDoCanal">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Nome do Canal </th>
+          <td mat-cell *matCellDef="let row"> {{row.nomeDoCanal}} </td>
+        </ng-container>
+        <!-- Nome do canal Coluna -->
+
+        <!-- Plataforma Coluna -->
+        <ng-container matColumnDef="plataforma">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Plataforma </th>
+          <td mat-cell *matCellDef="let row"> {{row.plataforma}} </td>
+        </ng-container>
+        <!-- Plataforma Coluna -->
+
+        <!-- Tipo do Conteudo -->
+        <ng-container matColumnDef="tipoDoConteudo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Tipo do Conteudo </th>
+          <td mat-cell *matCellDef="let row"> {{row.tipoDoConteudo}} </td>
+        </ng-container>
+        <!-- Tipo do Conteudo -->
+
+        <!-- Botão deletar e editar -->
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+          <td mat-cell *matCellDef="let row">
+            <button mat-icon-button (click)=" openAlteracaoInfluencer(row)">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button (click)="deletandoInfluencer(row.id)">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+        <!-- Botão deletar e editar -->
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+        <!-- Row shown when there is no matching data. -->
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+        </tr>
+      </table>
+
+      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+    </div>
+  </div>
+</div>
