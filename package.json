@@ -6,9 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "buildProd": "ng build --base-href=/your-repo-name/"
   },
-  "private": true,
+  "public": true,
   "dependencies": {
     "@angular/animations": "^16.0.0",
     "@angular/cdk": "^16.1.4",
